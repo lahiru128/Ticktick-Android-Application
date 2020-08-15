@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Ticktick</string>
     <string name="ticktick">Ticktick</string>
+    <string name="title_name">My Expenses Tracker</string>
+    <string name="dashboard_income_total">Total Incomes</string>
+    <string name="dashboard_expenses">Total Expenses</string>
+    <string name="dashboard_balance">Balance</string>
+    <string name="value">000.00</string>
+    <string name="income">INCOMES</string>
+    <string name="expense">EXPENSES</string>
+    <string name="add_income_btn">Add Incomes</string>
+    <string name="add_expense_btn">Add Expenses</string>
 </resources>

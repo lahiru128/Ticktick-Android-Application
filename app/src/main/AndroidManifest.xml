@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".addExpenses"></activity>
+        <activity android:name=".AddIncome" />
+        <activity android:name=".ExpensesView" />
+        <activity android:name=".IncomeView" />
+        <activity android:name=".DashBoard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
