@@ -10,4 +10,14 @@
     <string name="expense">EXPENSES</string>
     <string name="add_income_btn">Add Incomes</string>
     <string name="add_expense_btn">Add Expenses</string>
+
+    <string name="input_incomes">ADD NEW INCOME</string>
+    <string name="add_amount">Amount</string>
+    <string name="add_name">Name</string>
+    <string name="add_note">Note</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="input_expenses">ADD NEW EXPENSES</string>
+
 </resources>
