@@ -16,4 +16,5 @@
     <string name="addbtn">Add</string>
     <string name="dialog_message">Welcome to Alert Dialog</string>
     <string name="dialog_title">Javatpoint Alert Dialog</string>
+    <string name="edit">Edit List</string>
 </resources>
