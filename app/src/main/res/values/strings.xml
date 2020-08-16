@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">Ticktick</string>
     <string name="ticktick">Ticktick</string>
+    <string name="dash">Dashborad</string>
+    <string name="createbtn">Create List</string>
+    <string name="view">View List</string>
+    <string name="completebtn">Completed</string>
+    <string name="editbtn">Edit List</string>
+    <string name="deletebtn">Delete</string>
+    <string name="create">Create List</string>
+    <string name="insermorebtn">Insert More To-Dos</string>
+    <string name="updatebtn">Update</string>
+    <string name="shopping">Shopping</string>
+    <string name="home_work">Home Work</string>
+    <string name="personal">Personal</string>
+    <string name="addbtn">Add</string>
+    <string name="dialog_message">Welcome to Alert Dialog</string>
+    <string name="dialog_title">Javatpoint Alert Dialog</string>
 </resources>
