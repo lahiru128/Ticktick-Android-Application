@@ -165,7 +165,7 @@
         android:layout_width="157dp"
         android:layout_height="62dp"
         android:layout_marginBottom="104dp"
-        android:background="#55E16B"
+        android:background="#ED3C3C"
         android:text="@string/cancel"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"

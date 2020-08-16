@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddIncome">
+    tools:context=".ExpenseUpdate">
+
 
     <TextView
         android:id="@+id/title"
@@ -29,7 +30,7 @@
         android:layout_height="50dp"
         android:layout_marginBottom="600dp"
         android:fontFamily="sans-serif-medium"
-        android:text="@string/input_incomes"
+        android:text="@string/update_expense"
         android:textAlignment="center"
         android:textColor="#1237BA"
         android:textSize="30sp"
@@ -94,85 +95,74 @@
         app:layout_constraintTop_toBottomOf="@+id/inputIncomes"
         app:layout_constraintVertical_bias="0.502" />
 
-    <EditText
-        android:id="@+id/incomeAmountAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputIncomes"
-        app:layout_constraintVertical_bias="0.079" />
-
-    <EditText
-        android:id="@+id/incomeNameAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/addIncomeName"
-        app:layout_constraintTop_toBottomOf="@+id/inputIncomes"
-        app:layout_constraintVertical_bias="0.268" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="206dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/addIncomeNote"
-        app:layout_constraintTop_toBottomOf="@+id/incomeAmountAdd"
-        app:layout_constraintVertical_bias="0.324" />
-
     <Button
-        android:id="@+id/incomeSaveBtn"
+        android:id="@+id/expenseUpdateBtn"
         android:layout_width="157dp"
         android:layout_height="62dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="#55E16B"
-        android:text="@string/save"
+        android:background="#FFC107"
+        android:text="@string/update_btn"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/incomeCancelBtn"
+        app:layout_constraintEnd_toStartOf="@+id/expenseDeleteBtn"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addIncomeNote" />
 
     <Button
-        android:id="@+id/incomeCancelBtn"
+        android:id="@+id/expenseDeleteBtn"
         android:layout_width="157dp"
         android:layout_height="62dp"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:background="#ED3C3C"
-        android:text="@string/cancel"
+        android:text="@string/delete_btn"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/expenseUpdateBtn"
+        app:layout_constraintTop_toBottomOf="@+id/UpNoteEx"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <TextView
+        android:id="@+id/upAmountEx"
+        android:layout_width="123dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.535" />
+        app:layout_constraintTop_toBottomOf="@+id/inputIncomes"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <TextView
+        android:id="@+id/upNameEx"
+        android:layout_width="123dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputIncomes"
+        app:layout_constraintVertical_bias="0.297" />
+
+    <TextView
+        android:id="@+id/UpNoteEx"
+        android:layout_width="123dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputIncomes"
+        app:layout_constraintVertical_bias="0.523" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

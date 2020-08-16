@@ -184,34 +184,34 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/addIncomeBtn"
+        android:id="@+id/ViewIncomeBtn"
         android:layout_width="124dp"
         android:layout_height="52dp"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="#55E16B"
+        android:background="#7075D8"
         android:text="@string/add_income_btn"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/addExpenseBtn"
+        app:layout_constraintEnd_toStartOf="@+id/ViewExpenseBtn"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView3"
         app:layout_constraintVertical_bias="0.504" />
 
     <Button
-        android:id="@+id/addExpenseBtn"
+        android:id="@+id/ViewExpenseBtn"
         android:layout_width="116dp"
         android:layout_height="49dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="68dp"
         android:layout_marginBottom="16dp"
-        android:background="#55E16B"
+        android:background="#7075D8"
         android:text="@string/add_expense_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/addIncomeBtn"
+        app:layout_constraintStart_toEndOf="@+id/ViewIncomeBtn"
         app:layout_constraintTop_toBottomOf="@+id/cardView3"
         app:layout_constraintVertical_bias="0.421" />
 
