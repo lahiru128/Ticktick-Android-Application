@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".LoansAndLendings"></activity>
+        <activity android:name=".Lendings" />
+        <activity android:name=".Loans" />
+        <activity android:name=".UpdateLendings" />
+        <activity android:name=".UpdateLoan" />
+        <activity android:name=".AddLendings" />
+        <activity android:name=".AddLoan" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
