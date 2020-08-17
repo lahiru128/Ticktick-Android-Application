@@ -8,13 +8,17 @@
 
     <TextView
         android:id="@+id/textView30"
-        android:layout_width="270dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="424dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="4dp"
+        android:background="#9fa8da"
         android:text="@string/loand_and_lendings"
-        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.702"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,6 +28,10 @@
         android:layout_height="70dp"
         android:layout_marginTop="596dp"
         android:text="@string/loansS"
+        android:background="#ffab40"
+        android:textColor="@color/cardview_dark_background"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,8 +43,55 @@
         android:layout_height="73dp"
         android:layout_marginBottom="60dp"
         android:text="@string/lendingsS"
+        android:background="#ffe082"
+        android:textColor="@color/cardview_dark_background"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="418dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="104dp"
+        android:background="#80cbc4"
+        android:text="Total of Loans      :"
+        android:textColor="@color/cardview_dark_background"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="420dp"
+        android:layout_height="85dp"
+        android:background="#80cbc4"
+        android:text="Total of Lendings :"
+        android:textColor="@color/cardview_dark_background"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="415dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="384dp"
+        android:background="#80cbc4"
+        android:text="Balance                 :"
+        android:textColor="@color/cardview_dark_background"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

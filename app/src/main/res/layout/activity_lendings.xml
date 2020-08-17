@@ -8,9 +8,10 @@
 
     <TextView
         android:id="@+id/textView28"
-        android:layout_width="215dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="413dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="4dp"
+        android:background="#9fa8da"
         android:text="@string/loans_and_lendings"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
