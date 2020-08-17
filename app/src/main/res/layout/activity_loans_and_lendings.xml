@@ -70,15 +70,16 @@
         android:id="@+id/textView35"
         android:layout_width="420dp"
         android:layout_height="85dp"
+        android:layout_marginBottom="472dp"
         android:background="#80cbc4"
         android:text="Total of Lendings :"
         android:textColor="@color/cardview_dark_background"
         android:textColorHint="@color/cardview_dark_background"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="181dp" />
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView36"
