@@ -1,3 +1,50 @@
 <resources>
     <string name="app_name">Ticktick</string>
+    <string name="ms1">MY REMINDERS</string>
+    <string name="ms2">ADD REMINDERS</string>
+    <string name="ms3">NAME</string>
+    <string name="ms4">DATE</string>
+    <string name="ms5">TIME</string>
+    <string name="ms6">DESCRIPTION</string>
+    <string name="b1">SAVE</string>
+    <string name="b2">DELETE</string>
+    <string name="m1"> MY REMINDERS</string>
+    <string name="m2">EDIT REMINDERS</string>
+    <string name="m3">NAME</string>
+    <string name="m4">DATE</string>
+    <string name="m5">TIME</string>
+    <string name="m6">DESCRIPTION</string>
+    <string name="ba1">UPDATE</string>
+    <string name="ba2">DELETE</string>
+    <string name="te1">MAD REPORT SUBMITION 1</string>
+    <string name="te2">AUGUST 9,2020</string>
+    <string name="te3">4.30 p.m</string>
+    <string name="te4">1.draw wireframes,2.design using android studio,3.write descriptions about functions</string>
+    <string name="v1">MY REMINDERS</string>
+    <string name="v2">MAD REPORT SUBMITION 1</string>
+    <string name="v3">TIME</string>
+    <string name="v4">DATE</string>
+    <string name="v5">DESCRIPTION</string>
+    <string name="v6">4.30p.m</string>
+    <string name="v7">AUGUST 9,2020</string>
+    <string name="v8">1.draw wireframes.
+                      2.design using android studio.
+                      3.writ description about function.</string>
+    <string name="vb1">COMPLETE</string>
+    <string name="r1">MY REMINDERS</string>
+    <string name="r2">TOTAL REMINDERS 03</string>
+    <string name="r3">REMINDER LIST</string>
+    <string name="r4">MAD REPORT SUBMTION 1
+                        4.30PM
+                    AUGUST 9, 2020</string>
+    <string name="r5">MAD REPORT SUMBITION 2
+                        4.30PM
+                    AUGUEST 9,2020</string>
+    <string name="r6">MAD REPORT SUNMITION 3
+                        4.30PM
+                    AUGUST 9,2020</string>
+    <string name="rb1">ADD REMINDER</string>
+    <string name="rb2">EDIT</string>
+
+
 </resources>
