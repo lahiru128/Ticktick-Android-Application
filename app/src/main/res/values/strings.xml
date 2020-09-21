@@ -24,4 +24,6 @@
     <string name="delete_btn">DELETE</string>
     <string name="invalid_amount">Amount Cannot be Empty</string>
     <string name="invalid_name">Name Cannot be Empty</string>
+    <string name="invalid_eamount">Amount cannot be Empty!</string>
+    <string name="invalid_ename">Name Cannot Be Empty!!</string>
 </resources>

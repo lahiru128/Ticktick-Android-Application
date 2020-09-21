@@ -1,21 +1,21 @@
 package com.example.ticktick;
 
-import android.os.Bundle;
-import android.text.TextUtils;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
+        import android.os.Bundle;
+        import android.text.TextUtils;
+        import android.view.View;
+        import android.widget.Button;
+        import android.widget.EditText;
+        import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
+        import androidx.appcompat.app.AppCompatActivity;
 
-import com.basgeekball.awesomevalidation.AwesomeValidation;
-import com.basgeekball.awesomevalidation.utility.RegexTemplate;
-import com.example.ticktick.Model.Incomes;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+        import com.basgeekball.awesomevalidation.AwesomeValidation;
+        import com.basgeekball.awesomevalidation.utility.RegexTemplate;
+        import com.example.ticktick.Model.Incomes;
+        import com.google.firebase.database.DatabaseReference;
+        import com.google.firebase.database.FirebaseDatabase;
 
-import static com.basgeekball.awesomevalidation.ValidationStyle.BASIC;
+        import static com.basgeekball.awesomevalidation.ValidationStyle.BASIC;
 
 public class AddIncome extends AppCompatActivity {
 
