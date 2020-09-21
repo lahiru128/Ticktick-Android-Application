@@ -3,8 +3,9 @@ package com.example.ticktick;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
-public class addExpenses extends AppCompatActivity {
+public class AddExpenses extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
