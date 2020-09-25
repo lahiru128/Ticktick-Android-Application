@@ -27,7 +27,7 @@
         android:id="@+id/inputIncomes"
         android:layout_width="322dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="600dp"
+        android:layout_marginBottom="596dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/input_incomes"
         android:textAlignment="center"
@@ -35,7 +35,7 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/expensesTotalDashboard"
         app:layout_constraintVertical_bias="0.213" />

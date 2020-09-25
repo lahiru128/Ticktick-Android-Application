@@ -20,20 +20,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageView
         android:id="@+id/incomeAddBtn"
-        android:layout_width="178dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="#55E16B"
-        android:text="@string/input_incomes"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.607"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card_view"
-        app:layout_constraintVertical_bias="0.451" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863" />
+
+
+    <!--    <Button-->
+<!--        android:id="@+id/incomeAddBtn"-->
+<!--        android:layout_width="178dp"-->
+<!--        android:layout_height="53dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:background="#55E16B"-->
+<!--        android:text="@string/input_incomes"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/card_view"-->
+<!--        app:layout_constraintVertical_bias="0.451" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

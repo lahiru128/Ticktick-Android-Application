@@ -72,7 +72,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Update"
-        android:id="@+id/usubmit"
+        android:id="@+id/upSubmit"
         android:background="@drawable/updatebtn_round"
         android:textColor="#fff"
         android:layout_gravity="center"
