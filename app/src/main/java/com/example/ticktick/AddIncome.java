@@ -1,5 +1,6 @@
 package com.example.ticktick;
 
+        import android.content.Intent;
         import android.os.Bundle;
         import android.text.TextUtils;
         import android.view.View;
@@ -20,7 +21,7 @@ package com.example.ticktick;
 public class AddIncome extends AppCompatActivity {
 
     EditText amount, name, note;
-    Button btnIncomeSave;
+    Button btnIncomeSave,btnIncomeCancel;
     DatabaseReference databaseIncomes;
     AwesomeValidation awesomeValidation;
 
@@ -45,7 +46,7 @@ public class AddIncome extends AppCompatActivity {
         awesomeValidation.addValidation(AddIncome.this, R.id.incomeAmountAdd, RegexTemplate.NOT_EMPTY, R.string.invalid_amount);
         awesomeValidation.addValidation(AddIncome.this, R.id.incomeNameAdd, RegexTemplate.NOT_EMPTY, R.string.invalid_name);
 
-        //onclick listener
+        //onclick listener for save button and validations
         btnIncomeSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,6 +57,15 @@ public class AddIncome extends AppCompatActivity {
                 } else {
                     Toast.makeText(getApplicationContext(), "Validation Failed", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+
+        //Onclick listener for cancellation button
+        btnIncomeCancel = (Button) findViewById(R.id.incomeCancelBtn);
+        btnIncomeCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openIncomeView();
             }
         });
     }
@@ -75,7 +85,13 @@ public class AddIncome extends AppCompatActivity {
         } else {
             Toast.makeText(this, "You Should enter a Amount", Toast.LENGTH_LONG).show();
         }
+    }
 
+
+    //Cancellation button
+    public void openIncomeView() {
+        Intent intent = new Intent(this, IncomeView.class);
+        startActivity(intent);
     }
 
 

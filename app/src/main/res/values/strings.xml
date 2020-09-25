@@ -26,4 +26,7 @@
     <string name="invalid_name">Name Cannot be Empty</string>
     <string name="invalid_eamount">Amount cannot be Empty!</string>
     <string name="invalid_ename">Name Cannot Be Empty!!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_data">0000.00</string>
 </resources>
