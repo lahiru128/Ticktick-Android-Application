@@ -3,6 +3,7 @@ package com.example.ticktick;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,14 +19,14 @@ public class IncomeView extends AppCompatActivity {
 
     RecyclerView recyclerView;
     MyAdapter adapter;
-    ImageView addIncome;
+    ImageButton addIncome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_income_view);
 
-        addIncome = (ImageView) findViewById(R.id.incomeAddBtn);
+        addIncome = (ImageButton) findViewById(R.id.incomeAddBtn);
         addIncome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

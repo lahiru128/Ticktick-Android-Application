@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -125,15 +126,15 @@ public class MyAdapter extends FirebaseRecyclerAdapter<Incomes, MyAdapter.myview
     class myviewholder extends RecyclerView.ViewHolder {
 
         TextView incomeName, incomeAmount, incomeNote;
-        ImageView editBtn, deleteBtn;
+        ImageButton editBtn, deleteBtn;
 
         public myviewholder(@NonNull View itemView) {
             super(itemView);
             incomeName = (TextView) itemView.findViewById(R.id.iName);
             incomeAmount = (TextView) itemView.findViewById(R.id.iAmount);
             incomeNote = (TextView) itemView.findViewById(R.id.iNote);
-            editBtn = (ImageView) itemView.findViewById(R.id.editIcon);
-            deleteBtn = (ImageView) itemView.findViewById(R.id.deleteIcon);
+            editBtn = (ImageButton) itemView.findViewById(R.id.editIcon);
+            deleteBtn = (ImageButton) itemView.findViewById(R.id.deleteIcon);
         }
     }
 }
