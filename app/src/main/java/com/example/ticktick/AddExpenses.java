@@ -2,6 +2,7 @@ package com.example.ticktick;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -20,7 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class AddExpenses extends AppCompatActivity {
 
     EditText e_amount,e_name,e_note;
-    Button btnExpenseSave;
+    Button btnExpenseSave,btnExpenseCancel;
     DatabaseReference databaseExpenses;
     AwesomeValidation awesomeValidation;
 
@@ -54,9 +55,19 @@ public class AddExpenses extends AppCompatActivity {
                 if (awesomeValidation.validate()){
                     //On success
                     addExpense();
+                    openExpenseView();
                 }else {
                     Toast.makeText(getApplicationContext(), "Validation Failed", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+
+        //Onclick listener for cancellation button
+        btnExpenseCancel = (Button) findViewById(R.id.expensesCancelBtn);
+        btnExpenseCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openExpenseView();
             }
         });
     }
@@ -76,5 +87,11 @@ public class AddExpenses extends AppCompatActivity {
         }else {
             Toast.makeText(this,"You Should enter the amount",Toast.LENGTH_LONG).show();
         }
+    }
+
+    //Cancellation button
+    public void openExpenseView() {
+        Intent intent = new Intent(this, ExpensesView.class);
+        startActivity(intent);
     }
 }

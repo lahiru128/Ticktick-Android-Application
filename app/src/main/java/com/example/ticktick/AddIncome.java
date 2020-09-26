@@ -3,6 +3,7 @@ package com.example.ticktick;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,6 +14,9 @@ import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 import com.example.ticktick.Model.Incomes;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.orhanobut.dialogplus.DialogPlus;
+import com.orhanobut.dialogplus.ViewHolder;
+
 import static com.basgeekball.awesomevalidation.ValidationStyle.BASIC;
 
 public class AddIncome extends AppCompatActivity {
@@ -51,11 +55,13 @@ public class AddIncome extends AppCompatActivity {
                 if (awesomeValidation.validate()) {
                     //On Success
                     addIncome();
+                    openIncomeView();
                 } else {
                     Toast.makeText(getApplicationContext(), "Validation Failed", Toast.LENGTH_LONG).show();
                 }
             }
         });
+
 
         //Onclick listener for cancellation button
         btnIncomeCancel = (Button) findViewById(R.id.incomeCancelBtn);

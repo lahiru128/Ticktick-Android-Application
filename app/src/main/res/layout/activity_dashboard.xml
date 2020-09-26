@@ -7,106 +7,11 @@
     android:textAlignment="center"
     tools:context=".DashBoard">
 
-    <TextView
-        android:id="@+id/expensesTotalDashboard"
-        android:layout_width="164dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/dashboard_expenses"
-        android:textColor="#D54545"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/balanceDashboard"
-        app:layout_constraintEnd_toStartOf="@+id/expensesResultDashboard"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/incomeTotalDashboard"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/incomeTotalDashboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/dashboard_income_total"
-        android:textColor="#2955C5"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView2"
-        app:layout_constraintEnd_toStartOf="@+id/incomeResultDashboard"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintVertical_bias="0.095" />
-
-    <TextView
-        android:id="@+id/balanceDashboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="155dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="100dp"
-        android:text="@string/dashboard_balance"
-        android:textColor="#318812"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView2"
-        app:layout_constraintEnd_toStartOf="@+id/incomeResultDashboard"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/title" />
-
-    <TextView
-        android:id="@+id/balanceResultDashboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/value"
-        android:textColor="#318812"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toEndOf="@+id/balanceDashboard"
-        app:layout_constraintTop_toBottomOf="@+id/expensesResultDashboard"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/expensesResultDashboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="60dp"
-        android:text="@string/value"
-        android:textColor="#D54545"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/incomeResultDashboard" />
-
-    <TextView
-        android:id="@+id/incomeResultDashboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="59dp"
-        android:layout_marginBottom="640dp"
-        android:text="@string/value"
-        android:textColor="#2955C5"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.822"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/title" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="423dp"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:background="#673AB7"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/title_name"
@@ -116,72 +21,142 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.002" />
+
+    <TextView
+        android:id="@+id/incomeTotalDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="56dp"
+        android:text="@string/dashboard_income_total"
+        android:textColor="#2955C5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/expensesTotalDashboard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/balanceDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboard_balance"
+        android:textColor="#318812"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/incomeLabel"
+        app:layout_constraintEnd_toStartOf="@+id/balanceResultDashboard"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expensesTotalDashboard" />
+
+    <TextView
+        android:id="@+id/balanceResultDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value"
+        android:textColor="#318812"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/incomeLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/balanceDashboard"
+        app:layout_constraintTop_toBottomOf="@+id/expensesResultDashboard" />
+
+    <TextView
+        android:id="@+id/expensesResultDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value"
+        android:textColor="#D54545"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/balanceResultDashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toEndOf="@+id/expensesTotalDashboard"
+        app:layout_constraintTop_toBottomOf="@+id/incomeResultDashboard" />
+
+    <TextView
+        android:id="@+id/expensesTotalDashboard"
+        android:layout_width="164dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="56dp"
+        android:text="@string/dashboard_expenses"
+        android:textColor="#D54545"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/balanceDashboard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incomeTotalDashboard" />
+
+    <TextView
+        android:id="@+id/incomeResultDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="@string/value"
+        android:textColor="#2955C5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/expensesResultDashboard"
+        app:layout_constraintStart_toEndOf="@+id/incomeTotalDashboard"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <TextView
         android:id="@+id/incomeLabel"
         android:layout_width="94dp"
         android:layout_height="27dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="244dp"
         android:text="@string/income"
         android:textAlignment="inherit"
         android:textColor="#020202"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/expensesTotalDashboard"
-        app:layout_constraintVertical_bias="0.213" />
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dashboardRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="15dp"
+        android:background="#4889EA"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/incomeLabel2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incomeLabel">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
     <TextView
         android:id="@+id/incomeLabel2"
         android:layout_width="94dp"
         android:layout_height="27dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="15dp"
         android:text="@string/expense"
         android:textAlignment="inherit"
         android:textColor="#020202"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashboardRecyclerView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dashboardExRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#95FA1212"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/expensesTotalDashboard"
-        app:layout_constraintVertical_bias="0.525" />
+        app:layout_constraintTop_toBottomOf="@+id/incomeLabel2"
+        app:layout_constraintVertical_bias="0.166">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
-        android:layout_width="405dp"
-        android:layout_height="113dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        app:cardBackgroundColor="#B4A2F69A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintVertical_bias="0.423">
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
-        android:layout_width="411dp"
-        android:layout_height="118dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="156dp"
-        app:cardBackgroundColor="#EFB5B5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.636"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintVertical_bias="1.0" />
+    </androidx.recyclerview.widget.RecyclerView>
 
     <Button
         android:id="@+id/ViewIncomeBtn"
@@ -196,23 +171,24 @@
         app:layout_constraintEnd_toStartOf="@+id/ViewExpenseBtn"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/dashboardExRecyclerView"
         app:layout_constraintVertical_bias="0.504" />
 
     <Button
         android:id="@+id/ViewExpenseBtn"
         android:layout_width="116dp"
         android:layout_height="49dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="47dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="68dp"
+        android:layout_marginEnd="60dp"
         android:layout_marginBottom="16dp"
         android:background="#7075D8"
         android:text="@string/add_expense_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ViewIncomeBtn"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintTop_toBottomOf="@+id/dashboardExRecyclerView"
+        app:layout_constraintVertical_bias="0.29" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
