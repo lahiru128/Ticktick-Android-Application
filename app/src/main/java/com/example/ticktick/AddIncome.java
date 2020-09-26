@@ -1,27 +1,24 @@
 package com.example.ticktick;
 
-        import android.content.Intent;
-        import android.os.Bundle;
-        import android.text.TextUtils;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.EditText;
-        import android.widget.Toast;
-
-        import androidx.appcompat.app.AppCompatActivity;
-
-        import com.basgeekball.awesomevalidation.AwesomeValidation;
-        import com.basgeekball.awesomevalidation.utility.RegexTemplate;
-        import com.example.ticktick.Model.Incomes;
-        import com.google.firebase.database.DatabaseReference;
-        import com.google.firebase.database.FirebaseDatabase;
-
-        import static com.basgeekball.awesomevalidation.ValidationStyle.BASIC;
+import android.content.Intent;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
+import com.example.ticktick.Model.Incomes;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import static com.basgeekball.awesomevalidation.ValidationStyle.BASIC;
 
 public class AddIncome extends AppCompatActivity {
 
     EditText amount, name, note;
-    Button btnIncomeSave,btnIncomeCancel;
+    Button btnIncomeSave, btnIncomeCancel;
     DatabaseReference databaseIncomes;
     AwesomeValidation awesomeValidation;
 
@@ -87,12 +84,9 @@ public class AddIncome extends AppCompatActivity {
         }
     }
 
-
     //Cancellation button
     public void openIncomeView() {
         Intent intent = new Intent(this, IncomeView.class);
         startActivity(intent);
     }
-
-
 }

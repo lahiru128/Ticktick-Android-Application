@@ -36,7 +36,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/iName"
+                    android:id="@+id/eName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -46,7 +46,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/iAmount"
+                    android:id="@+id/eAmount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -56,7 +56,7 @@
 
 
                 <TextView
-                    android:id="@+id/iNote"
+                    android:id="@+id/eNote"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -74,14 +74,14 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/editIcon"
+                android:id="@+id/editIconEx"
                 android:layout_width="90dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="200dp"
                 android:src="@drawable/edit" />
 
             <ImageView
-                android:id="@+id/deleteIcon"
+                android:id="@+id/deleteIconEx"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:src="@drawable/delete" />

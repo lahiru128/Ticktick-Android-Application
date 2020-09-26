@@ -1,14 +1,13 @@
 package com.example.ticktick;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ticktick.Adapter.MyAdapter;
 import com.example.ticktick.Model.Incomes;
@@ -19,7 +18,6 @@ public class IncomeView extends AppCompatActivity {
 
     RecyclerView recyclerView;
     MyAdapter adapter;
-
     ImageView addIncome;
 
     @Override
@@ -34,21 +32,16 @@ public class IncomeView extends AppCompatActivity {
                 openIncomeAddFrom();
             }
         });
-
-
-
-        recyclerView=(RecyclerView)findViewById(R.id.incomeRecycleView);
+        recyclerView = (RecyclerView) findViewById(R.id.incomeRecycleView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         FirebaseRecyclerOptions<Incomes> options =
                 new FirebaseRecyclerOptions.Builder<Incomes>()
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("Incomes"), Incomes.class)
                         .build();
-
-        adapter =new MyAdapter(options);
+        adapter = new MyAdapter(options);
         recyclerView.setAdapter(adapter);
     }
-
 
     @Override
     protected void onStart() {
@@ -61,13 +54,9 @@ public class IncomeView extends AppCompatActivity {
         super.onStop();
         adapter.stopListening();
     }
-    public void openIncomeAddFrom(){
-        Intent intent = new Intent(this,AddIncome.class);
-        startActivity(intent);
-    }
 
-    public void openIncomeUpdateForm(){
-        Intent intent = new Intent(this,IncomeUpdate.class);
+    public void openIncomeAddFrom() {
+        Intent intent = new Intent(this, AddIncome.class);
         startActivity(intent);
     }
 }
