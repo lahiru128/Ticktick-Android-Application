@@ -6,14 +6,14 @@
     <string name="dashboard_expenses">Total Expenses</string>
     <string name="dashboard_balance">Balance</string>
     <string name="value">000.00</string>
-    <string name="income">INCOMES</string>
-    <string name="expense">EXPENSES</string>
+    <string name="income">YOUR INCOMES</string>
+    <string name="expense">YOUR EXPENSES</string>
     <string name="add_income_btn">INCOMES</string>
     <string name="add_expense_btn">EXPENSES</string>
     <string name="input_incomes">ADD NEW INCOME</string>
-    <string name="add_amount">Amount</string>
-    <string name="add_name">Name</string>
-    <string name="add_note">Note</string>
+    <string name="add_amount">Update Amount</string>
+    <string name="add_name">Update Name</string>
+    <string name="add_note">Update Note</string>
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
     <string name="input_expenses">ADD NEW EXPENSES</string>
@@ -30,4 +30,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dummy_data">0000.00</string>
     <string name="update_expens">Update Expense</string>
+    <string name="your_incomes">Your Incomes</string>
+    <string name="your_expenses">Your Expenses</string>
+    <string name="expenses_dashboard">Expenses Dashboard</string>
 </resources>

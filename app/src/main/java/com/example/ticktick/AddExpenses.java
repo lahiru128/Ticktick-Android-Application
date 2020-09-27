@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
@@ -21,7 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class AddExpenses extends AppCompatActivity {
 
     EditText e_amount,e_name,e_note;
-    Button btnExpenseSave,btnExpenseCancel;
+    ImageButton btnExpenseSave,btnExpenseCancel;
     DatabaseReference databaseExpenses;
     AwesomeValidation awesomeValidation;
 
@@ -37,7 +38,7 @@ public class AddExpenses extends AppCompatActivity {
         e_amount = (EditText) findViewById(R.id.expenseAmountAdd);
         e_name = (EditText) findViewById(R.id.expenseNameAdd);
         e_note = (EditText) findViewById(R.id.expenseNoteAdd);
-        btnExpenseSave = (Button) findViewById(R.id.expensesSaveBtn);
+        btnExpenseSave = (ImageButton) findViewById(R.id.expensesSaveBtn);
 
         //Initialize Validation Style
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
@@ -63,7 +64,7 @@ public class AddExpenses extends AppCompatActivity {
         });
 
         //Onclick listener for cancellation button
-        btnExpenseCancel = (Button) findViewById(R.id.expensesCancelBtn);
+        btnExpenseCancel = (ImageButton) findViewById(R.id.expensesCancelBtn);
         btnExpenseCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

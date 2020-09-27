@@ -5,5 +5,7 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="dateColor">#040C9C</color>
     <color name="expenseAmount">#D30606</color>
+    <color name="whitegray">#F0F3F4</color>
+
 
 </resources>

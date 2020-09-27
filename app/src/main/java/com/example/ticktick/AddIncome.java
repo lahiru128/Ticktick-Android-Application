@@ -7,6 +7,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.basgeekball.awesomevalidation.AwesomeValidation;
@@ -22,7 +23,7 @@ import static com.basgeekball.awesomevalidation.ValidationStyle.BASIC;
 public class AddIncome extends AppCompatActivity {
 
     EditText amount, name, note;
-    Button btnIncomeSave, btnIncomeCancel;
+    ImageButton btnIncomeSave, btnIncomeCancel;
     DatabaseReference databaseIncomes;
     AwesomeValidation awesomeValidation;
 
@@ -35,10 +36,10 @@ public class AddIncome extends AppCompatActivity {
         databaseIncomes = FirebaseDatabase.getInstance().getReference("Incomes");
 
         //Assign Variables
-        amount = (EditText) findViewById(R.id.incomeAmountAdd);
         name = (EditText) findViewById(R.id.incomeNameAdd);
+        amount = (EditText) findViewById(R.id.incomeAmountAdd);
         note = (EditText) findViewById(R.id.incomeNoteAdd);
-        btnIncomeSave = (Button) findViewById(R.id.incomeSaveBtn);
+        btnIncomeSave = (ImageButton) findViewById(R.id.incomeSaveBtn);
 
         //Initialize Validation Style
         awesomeValidation = new AwesomeValidation(BASIC);
@@ -64,7 +65,7 @@ public class AddIncome extends AppCompatActivity {
 
 
         //Onclick listener for cancellation button
-        btnIncomeCancel = (Button) findViewById(R.id.incomeCancelBtn);
+        btnIncomeCancel = (ImageButton) findViewById(R.id.incomeCancelBtn);
         btnIncomeCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,14 +76,14 @@ public class AddIncome extends AppCompatActivity {
 
     //Add income method
     private void addIncome() {
-        String incomeAmount = amount.getText().toString().trim();
         String incomeName = name.getText().toString().trim();
+        String incomeAmount = amount.getText().toString().trim();
         String incomeNote = note.getText().toString().trim();
 
         //Check whether the amount is entered
         if (!TextUtils.isEmpty(incomeAmount)) {
             String id = databaseIncomes.push().getKey();
-            Incomes incomes = new Incomes(id, incomeAmount, incomeName, incomeNote);
+            Incomes incomes = new Incomes(id,incomeName, incomeAmount, incomeNote);
             databaseIncomes.child(id).setValue(incomes);
             Toast.makeText(this, "Income added", Toast.LENGTH_LONG).show();
         } else {

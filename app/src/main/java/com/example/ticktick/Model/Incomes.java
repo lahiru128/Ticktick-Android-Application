@@ -3,17 +3,17 @@ package com.example.ticktick.Model;
 public class Incomes {
 
     String incomeId;
-    String incomeAmount;
     String incomeName;
+    String incomeAmount;
     String incomeNote;
 
     public Incomes() {
     }
 
-    public Incomes(String incomeId, String incomeAmount, String incomeName, String incomeNote) {
+    public Incomes(String incomeId,String incomeName, String incomeAmount, String incomeNote) {
         this.incomeId = incomeId;
-        this.incomeAmount = incomeAmount;
         this.incomeName = incomeName;
+        this.incomeAmount = incomeAmount;
         this.incomeNote = incomeNote;
     }
 

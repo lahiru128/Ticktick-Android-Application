@@ -1,36 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_width="400dp"
+    android:layout_height="500dp"
     android:layout_gravity="center"
-    android:background="@drawable/round_corner"
+    android:gravity="center"
+    android:background="#F1DDD5"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
-        android:background="#54C88339"
+        android:layout_marginBottom="40dp"
         android:gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="@string/update_expens"
-        android:textColor="#000000"
-        android:textSize="25sp" />
+        android:textStyle="bold"
+        android:textColor="#EA525E"
+        android:textSize="27sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
         android:text="@string/add_name"
-        android:textColor="#000"
+        android:textColor="#EA525E"
         android:textSize="25sp"
         android:textStyle="bold" />
 
 
     <EditText
         android:id="@+id/expenseUpName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="45dp"
         android:layout_marginTop="10dp"
+        android:background="@drawable/formex"
         android:textSize="20sp" />
 
 
@@ -39,15 +46,19 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:text="@string/add_amount"
-        android:textColor="#000"
+        android:gravity="center"
+        android:textColor="#EA525E"
+        android:fontFamily="sans-serif-smallcaps"
         android:textSize="25sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/expenseUpAmount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
         android:layout_marginTop="10dp"
+        android:background="@drawable/formex"
         android:textSize="20sp" />
 
     <TextView
@@ -56,27 +67,27 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:text="@string/add_note"
-        android:textColor="#000"
+        android:gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#EA525E"
         android:textSize="25sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/expenseUpNote"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="45dp"
         android:layout_marginTop="10dp"
+        android:background="@drawable/formex"
         android:textSize="20sp" />
 
     <Button
         android:id="@+id/expenseUpSubmit"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/updatebtn_round"
-        android:text="Update"
-        android:textColor="#fff"
+        android:background="@mipmap/saveex"
         android:textSize="20sp" />
 
 </LinearLayout>

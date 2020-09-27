@@ -1,227 +1,287 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:textAlignment="center"
+    android:orientation="vertical"
     tools:context=".DashBoard">
 
-
-    <TextView
-        android:id="@+id/title"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="51dp"
-        android:layout_marginBottom="710dp"
-        android:layout_marginTop="0dp"
-        android:background="#8C58E8"
-        android:fontFamily="sans-serif-smallcaps"
-        android:gravity="center"
-        android:text="@string/title_name"
-        android:textAlignment="inherit"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RelativeLayout
-        android:layout_width="187dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="80dp"
-        android:layout_marginBottom="24dp"
-        android:background="#A1A6F4"
-        app:layout_constraintBottom_toTopOf="@+id/incomeLabel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintVertical_bias="0.0">
-
-
-        <TextView
-            android:id="@+id/incomeTotalDashboard"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:text="@string/dashboard_income_total"
-            android:textColor="#0B25C8"
-            android:textSize="27dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/incomeResultDashboard"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_below="@+id/incomeTotalDashboard"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="5dp"
-            android:gravity="center"
-            android:text="@string/value"
-            android:textColor="#0B25C8"
-            android:textSize="30dp"
-            android:textStyle="bold" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="187dp"
-        android:layout_height="120dp"
-        android:layout_marginLeft="210dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="24dp"
-        android:background="#E48F8F"
-        app:layout_constraintBottom_toTopOf="@+id/incomeLabel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintVertical_bias="0.0">
-
-
-        <TextView
-            android:id="@+id/expensesTotalDashboard"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_below="@+id/image_view"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
-            android:gravity="center"
-            android:text="@string/dashboard_expenses"
-            android:textColor="#EA0F0F"
-            android:textSize="27dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/expensesResultDashboard"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_below="@+id/expensesTotalDashboard"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="5dp"
-            android:gravity="center"
-            android:text="@string/value"
-            android:textColor="#EA0F0F"
-            android:textSize="30dp"
-            android:textStyle="bold" />
-    </RelativeLayout>
-
-
-    <TextView
-        android:id="@+id/incomeLabel"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="148dp"
-        android:fontFamily="@font/amarante"
-        android:gravity="center"
-        android:text="@string/income"
-        android:textAlignment="inherit"
-        android:textColor="#0B25C8"
-        android:textSize="28sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/dashboardRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="15dp"
-        android:background="#1E90FF"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/incomeLabel2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/incomeLabel">
-
-    </androidx.recyclerview.widget.RecyclerView>
-
-    <TextView
-        android:id="@+id/incomeLabel2"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="15dp"
-        android:fontFamily="@font/amarante"
-        android:text="@string/expense"
-        android:textAlignment="inherit"
-        android:textColor="#EA0F0F"
-        android:textSize="28sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dashboardRecyclerView" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/dashboardExRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="#FF4500"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/incomeLabel2"
-        app:layout_constraintVertical_bias="0.133">
-
-    </androidx.recyclerview.widget.RecyclerView>
-
-    <ImageButton
-        android:id="@+id/ViewIncomeBtn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="16dp"
-        android:background="@mipmap/incomeicon"
-        android:text="@string/add_income_btn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dashboardExRecyclerView" />
-
-    <ImageButton
-        android:id="@+id/ViewExpenseBtn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="88dp"
-        android:background="@mipmap/expenseicon"
-        android:text="@string/add_expense_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dashboardExRecyclerView" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginBottom="16dp"
-        android:text="View Incomes"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ViewIncomeBtn"
-        app:layout_constraintVertical_bias="0.0" />
+        android:orientation="vertical"
+        android:background="@drawable/ic_wave_dashboard">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="16dp"
-        android:text="View Expenses"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ViewExpenseBtn"
-        app:layout_constraintVertical_bias="0.0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/expenses_dashboard"
+                android:textSize="36dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="#FFFFFF">
+            </TextView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/round_corner"
+                android:orientation="vertical"
+                android:elevation="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:elevation="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="#FFFFFF"
+                            android:src="@mipmap/smile"
+                            android:layout_gravity="center"
+                            app:civ_border_color="#FFF"
+                            app:civ_border_width="0dp" />
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/allerta_stencil"
+                            android:gravity="center"
+                            android:text="@string/dashboard_income_total"
+                            android:textColor="#3F51B5"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/incomeResultDashboard"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/allerta_stencil"
+                            android:gravity="center"
+                            android:text="@string/add_amount"
+                            android:textColor="#3F51B5"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/round_corner"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:elevation="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="#FFFFFF"
+                            android:src="@mipmap/sadicon"
+                            android:layout_gravity="center"
+                            app:civ_border_color="#FFF"
+                            app:civ_border_width="0dp" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dashboard_expenses"
+                            android:textColor="#C4BF231E"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/allerta_stencil"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/expensesResultDashboard"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_amount"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/allerta_stencil"
+                            android:textColor="#C4BF231E"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/incomeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:fontFamily="@font/ubuntu_mono_bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/income"
+                android:textAlignment="inherit"
+                android:textColor="#0B25C8"
+                android:textSize="28sp" />
+
+            <ImageButton
+                android:id="@+id/ViewIncomeBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="100dp"
+                android:background="@mipmap/viewi"
+                android:text="@string/add_income_btn"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dashboardRecyclerView"
+            android:layout_width="400dp"
+            android:layout_height="130dp"
+            android:background="#FFF"
+            android:orientation="horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/incomeLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:fontFamily="@font/ubuntu_mono_bold"
+                android:text="@string/expense"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAlignment="inherit"
+                android:textColor="#C4BF231E"
+                android:textSize="28sp"
+                />
+
+            <ImageButton
+                android:id="@+id/ViewExpenseBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp"
+                android:background="@mipmap/viewe"
+                android:text="@string/add_expense_btn" />
+
+
+
+        </LinearLayout>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dashboardExRecyclerView"
+            android:layout_width="400dp"
+            android:layout_height="130dp"
+            android:background="#FFF"
+            android:orientation="horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
