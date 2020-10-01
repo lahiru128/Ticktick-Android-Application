@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:textAlignment="center"
     android:orientation="vertical"
+    android:textAlignment="center"
     tools:context=".DashBoard">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/ic_wave_dashboard">
+        android:background="@drawable/ic_wave_dashboard"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,14 +21,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/expenses_dashboard"
-                android:textSize="36dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
-                android:textStyle="bold"
                 android:fontFamily="sans-serif-smallcaps"
-                android:textColor="#FFFFFF">
-            </TextView>
+                android:text="@string/expenses_dashboard"
+                android:textColor="#FFFFFF"
+                android:textSize="36dp"
+                android:textStyle="bold"></TextView>
 
 
         </LinearLayout>
@@ -38,17 +37,17 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
             android:gravity="center"
-            android:padding="3dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="3dp">
 
             <LinearLayout
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_gravity="center"
-                android:gravity="center"
                 android:background="@drawable/round_corner"
-                android:orientation="vertical"
                 android:elevation="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp">
 
@@ -72,9 +71,9 @@
                             android:id="@+id/img1"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
+                            android:layout_gravity="center"
                             android:background="#FFFFFF"
                             android:src="@mipmap/smile"
-                            android:layout_gravity="center"
                             app:civ_border_color="#FFF"
                             app:civ_border_width="0dp" />
 
@@ -105,12 +104,13 @@
                 </LinearLayout>
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_gravity="center"
-                android:gravity="center"
                 android:background="@drawable/round_corner"
+                android:gravity="center"
                 android:orientation="vertical"
                 android:padding="5dp">
 
@@ -128,27 +128,27 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:gravity="center"
                         android:layout_marginBottom="20dp"
+                        android:gravity="center"
                         android:orientation="vertical">
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
+                            android:layout_gravity="center"
                             android:background="#FFFFFF"
                             android:src="@mipmap/sadicon"
-                            android:layout_gravity="center"
                             app:civ_border_color="#FFF"
                             app:civ_border_width="0dp" />
 
                         <TextView
                             android:layout_width="120dp"
                             android:layout_height="wrap_content"
-                            android:text="@string/dashboard_expenses"
-                            android:textColor="#C4BF231E"
-                            android:gravity="center"
                             android:layout_gravity="center"
                             android:fontFamily="@font/allerta_stencil"
+                            android:gravity="center"
+                            android:text="@string/dashboard_expenses"
+                            android:textColor="#C4BF231E"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -156,11 +156,11 @@
                             android:id="@+id/expensesResultDashboard"
                             android:layout_width="200dp"
                             android:layout_height="wrap_content"
-                            android:text="@string/add_amount"
-                            android:gravity="center"
-                            android:layout_marginTop="10dp"
                             android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
                             android:fontFamily="@font/allerta_stencil"
+                            android:gravity="center"
+                            android:text="@string/add_amount"
                             android:textColor="#C4BF231E"
                             android:textSize="20dp"
                             android:textStyle="bold" />
@@ -188,9 +188,9 @@
                 android:id="@+id/incomeLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
+                android:layout_gravity="center"
                 android:fontFamily="@font/ubuntu_mono_bold"
                 android:gravity="center"
-                android:layout_gravity="center"
                 android:text="@string/income"
                 android:textAlignment="inherit"
                 android:textColor="#0B25C8"
@@ -201,23 +201,11 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="3dp"
                 android:layout_marginLeft="100dp"
+                android:layout_marginTop="3dp"
                 android:background="@mipmap/viewi"
-                android:text="@string/add_income_btn"
-                />
-
-
-
-
+                android:text="@string/add_income_btn" />
         </LinearLayout>
-
-
-
-
-
-
-
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/dashboardRecyclerView"
@@ -238,14 +226,13 @@
                 android:id="@+id/incomeLabel2"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:fontFamily="@font/ubuntu_mono_bold"
-                android:text="@string/expense"
-                android:gravity="center"
                 android:layout_gravity="center"
+                android:fontFamily="@font/ubuntu_mono_bold"
+                android:gravity="center"
+                android:text="@string/expense"
                 android:textAlignment="inherit"
                 android:textColor="#C4BF231E"
-                android:textSize="28sp"
-                />
+                android:textSize="28sp" />
 
             <ImageButton
                 android:id="@+id/ViewExpenseBtn"
@@ -257,10 +244,7 @@
                 android:text="@string/add_expense_btn" />
 
 
-
         </LinearLayout>
-
-
 
 
         <androidx.recyclerview.widget.RecyclerView
@@ -273,15 +257,6 @@
         </androidx.recyclerview.widget.RecyclerView>
 
     </LinearLayout>
-
-
-
-
-
-
-
-
-
 
 
 </LinearLayout>

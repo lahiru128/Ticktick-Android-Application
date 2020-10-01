@@ -2,12 +2,8 @@ package com.example.ticktick;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.TestLooperManager;
-import android.provider.ContactsContract;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ticktick.Adapter.DashboardExpenseAdapter;
 import com.example.ticktick.Adapter.DashboardIncomeAdapter;
-import com.example.ticktick.Adapter.MyAdapter;
 import com.example.ticktick.Model.Expenses;
 import com.example.ticktick.Model.Incomes;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -38,7 +33,6 @@ public class DashBoard extends AppCompatActivity {
     DatabaseReference expenseDb;
     private TextView incomeTotal;
     private TextView expenseTotal;
-    private TextView balance;
     private ImageButton incomeButton;
     private ImageButton expenseButton;
 
@@ -57,9 +51,9 @@ public class DashBoard extends AppCompatActivity {
         incomeDb.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                int totalIncomeSum =0;
-                for (DataSnapshot mysnap:snapshot.getChildren()){
-                    Map<String,Object> map = (Map<String, Object>) mysnap.getValue();
+                int totalIncomeSum = 0;
+                for (DataSnapshot mysnap : snapshot.getChildren()) {
+                    Map<String, Object> map = (Map<String, Object>) mysnap.getValue();
                     Object incomeAmount = map.get("incomeAmount");
                     double pValue = Double.parseDouble(String.valueOf(incomeAmount));
                     totalIncomeSum += pValue;
@@ -67,29 +61,33 @@ public class DashBoard extends AppCompatActivity {
                     incomeTotal.setText(String.valueOf(totalIncomeSum));
                 }
             }
+
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {}
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
         });
 
         expenseDb.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                int totalExpenseSum =0;
-                for (DataSnapshot mysnap:snapshot.getChildren()){
-                    Map<String,Object> map = (Map<String, Object>) mysnap.getValue();
+                int totalExpenseSum = 0;
+                for (DataSnapshot mysnap : snapshot.getChildren()) {
+                    Map<String, Object> map = (Map<String, Object>) mysnap.getValue();
                     Object expenseAmount = map.get("expenseAmount");
                     double pValue = Double.parseDouble(String.valueOf(expenseAmount));
                     totalExpenseSum += pValue;
                     expenseTotal.setText(String.valueOf(totalExpenseSum));
                 }
             }
+
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {}
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
         });
 
         //Incomes HorizontalRecycler
         dashboardRecyclerView = (RecyclerView) findViewById(R.id.dashboardRecyclerView);
-        dashboardRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false));
+        dashboardRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         FirebaseRecyclerOptions<Incomes> options1 =
                 new FirebaseRecyclerOptions.Builder<Incomes>()
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("Incomes"), Incomes.class)
@@ -99,7 +97,7 @@ public class DashBoard extends AppCompatActivity {
 
         //Expenses HorizontalRecycler
         dashboardRecyclerView = (RecyclerView) findViewById(R.id.dashboardExRecyclerView);
-        dashboardRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false));
+        dashboardRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         FirebaseRecyclerOptions<Expenses> options =
                 new FirebaseRecyclerOptions.Builder<Expenses>()
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("Expenses"), Expenses.class)
@@ -122,8 +120,6 @@ public class DashBoard extends AppCompatActivity {
                 openExpensesView();
             }
         });
-
-
 
 
     }
@@ -151,8 +147,6 @@ public class DashBoard extends AppCompatActivity {
         incomeAdapter.stopListening();
         expenseAdapter.stopListening();
     }
-
-
 
 
 }

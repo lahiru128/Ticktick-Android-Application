@@ -1,28 +1,28 @@
 package com.example.ticktick;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.Gravity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.basgeekball.awesomevalidation.AwesomeValidation;
 import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 import com.example.ticktick.Model.Incomes;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.orhanobut.dialogplus.DialogPlus;
-import com.orhanobut.dialogplus.ViewHolder;
 
 import static com.basgeekball.awesomevalidation.ValidationStyle.BASIC;
 
 public class AddIncome extends AppCompatActivity {
 
-    EditText amount, name, note;
+    EditText amount, name, note, date;
+    DatePickerDialog.OnDateSetListener datePickerDialog;
     ImageButton btnIncomeSave, btnIncomeCancel;
     DatabaseReference databaseIncomes;
     AwesomeValidation awesomeValidation;
@@ -47,6 +47,7 @@ public class AddIncome extends AppCompatActivity {
         //Add Validations For Amount
         awesomeValidation.addValidation(AddIncome.this, R.id.incomeAmountAdd, RegexTemplate.NOT_EMPTY, R.string.invalid_amount);
         awesomeValidation.addValidation(AddIncome.this, R.id.incomeNameAdd, RegexTemplate.NOT_EMPTY, R.string.invalid_name);
+
 
         //onclick listener for save button and validations
         btnIncomeSave.setOnClickListener(new View.OnClickListener() {
@@ -83,7 +84,7 @@ public class AddIncome extends AppCompatActivity {
         //Check whether the amount is entered
         if (!TextUtils.isEmpty(incomeAmount)) {
             String id = databaseIncomes.push().getKey();
-            Incomes incomes = new Incomes(id,incomeName, incomeAmount, incomeNote);
+            Incomes incomes = new Incomes(id, incomeName, incomeAmount, incomeNote);
             databaseIncomes.child(id).setValue(incomes);
             Toast.makeText(this, "Income added", Toast.LENGTH_LONG).show();
         } else {

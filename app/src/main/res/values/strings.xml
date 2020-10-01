@@ -33,4 +33,8 @@
     <string name="your_incomes">Your Incomes</string>
     <string name="your_expenses">Your Expenses</string>
     <string name="expenses_dashboard">Expenses Dashboard</string>
+    <string name="add_date">Add Date</string>
+    <string name="adding_note">Add Note</string>
+    <string name="adding_amount">Add Amount</string>
+    <string name="adding_name">Add Name</string>
 </resources>

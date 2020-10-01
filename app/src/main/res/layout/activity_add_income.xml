@@ -30,8 +30,8 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginTop="40dp"
             android:layout_gravity="center"
+            android:layout_marginTop="40dp"
             android:background="@mipmap/smile" />
     </LinearLayout>
 
@@ -55,7 +55,7 @@
             android:layout_marginTop="35dp"
             android:background="@drawable/formtextfield"
             android:gravity="center"
-            android:hint="@string/add_name"
+            android:hint="@string/adding_name"
             android:inputType="text"
             android:paddingLeft="15dp"
             android:textColorHint="#8D3F51B5" />
@@ -67,7 +67,7 @@
             android:layout_marginTop="35dp"
             android:background="@drawable/formtextfield"
             android:gravity="center"
-            android:hint="@string/add_amount"
+            android:hint="@string/adding_amount"
             android:inputType="numberDecimal"
             android:paddingLeft="15dp"
             android:textColorHint="#8D3F51B5" />
@@ -79,7 +79,7 @@
             android:layout_marginTop="35dp"
             android:background="@drawable/formtextfield"
             android:gravity="center"
-            android:hint="@string/add_note"
+            android:hint="@string/adding_note"
             android:inputType="textMultiLine"
             android:paddingLeft="15dp"
             android:textColorHint="#8D3F51B5" />
@@ -107,5 +107,7 @@
                 android:text="@string/cancel"
                 android:textSize="18sp" />
         </LinearLayout>
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

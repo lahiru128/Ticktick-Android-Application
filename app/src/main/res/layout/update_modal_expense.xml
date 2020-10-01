@@ -4,7 +4,7 @@
     android:layout_height="500dp"
     android:layout_gravity="center"
     android:gravity="center"
-    android:background="#F1DDD5"
+    android:background="@drawable/linear_expense_corner"
     android:orientation="vertical">
 
     <TextView
