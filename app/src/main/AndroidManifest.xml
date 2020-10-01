@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".DashBoard" />
+        <activity android:name=".IncomeUpdate" />
+        <activity android:name=".IncomeView" />
+        <activity android:name=".ExpenseUpdate" />
+        <activity android:name=".AddExpenses" />
+        <activity android:name=".AddIncome" />
+        <activity android:name=".ExpensesView" />
         <activity android:name=".TodoView" />
         <activity android:name=".TodoAdd" />
         <activity android:name=".TodoUpdate" />
