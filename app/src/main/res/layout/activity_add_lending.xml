@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
-    tools:context=".UpdateLoanActivity">
+    tools:context=".AddLendingActivity">
 
     <RelativeLayout
         android:id="@+id/rL1"
@@ -28,10 +29,10 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/addLoanTxt"
+        android:id="@+id/addLendingTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Update Loan"
+        android:text="Add Lending"
         android:textAllCaps="true"
         android:textColor="#0000FF"
         android:layout_below="@+id/rL1"
@@ -47,18 +48,17 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="40sp"
         android:layout_marginRight="40sp"
-        android:layout_below="@+id/addLoanTxt"
+        android:layout_below="@+id/addLendingTxt"
         android:background="@color/colorAccent"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         app:helperTextTextColor="#000"
         android:textColorHint="#000"
         >
-        <EditText
-            android:id="@+id/loanNameUpdateTxt"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lendingNameTxt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="12sp"
-            android:layout_below="@+id/addLoanTxt"
             android:hint="Person's Name"
             android:textColorHint="#000"
             android:paddingLeft="10dp"
@@ -81,8 +81,8 @@
         app:helperTextTextColor="#000"
         android:textColorHint="#000"
         >
-        <EditText
-            android:id="@+id/loanDateUpdateTxt"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lendingDateTxt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="12sp"
@@ -102,15 +102,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40sp"
+        android:background="@color/colorAccent"
         android:layout_marginRight="40sp"
         android:layout_below="@+id/txtLayout2"
         android:layout_marginTop="10dp"
         app:helperTextTextColor="#000"
         android:textColorHint="#000"
-        android:background="@color/colorAccent"
         >
-        <EditText
-            android:id="@+id/loanAmountUpdateTxt"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lendingAmountTxt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="12sp"
@@ -132,13 +132,13 @@
         android:layout_marginLeft="40sp"
         android:layout_marginRight="40sp"
         android:layout_below="@+id/txtLayout3"
-        android:layout_marginTop="10dp"
         android:background="@color/colorAccent"
+        android:layout_marginTop="10dp"
         app:helperTextTextColor="#000"
         android:textColorHint="#000"
         >
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/loanDescriptionUpdateTxt"
+            android:id="@+id/lendingDescriptionTxt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="12sp"
@@ -162,13 +162,13 @@
         >
 
         <Button
-            android:id="@+id/loanUpdateBtn"
+            android:id="@+id/lendingSaveBtn"
             android:layout_width="120dp"
             android:layout_height="50dp"
-            android:background="@drawable/loan_update_btn"
+            android:background="@drawable/save_btn"
             android:layout_marginLeft="50dp"
             android:layout_alignParentLeft="true"
-            android:text="Update"
+            android:text="Save"
             android:textAllCaps="true"
             android:textColor="#000"
             android:textStyle="bold"
@@ -176,13 +176,13 @@
             />
 
         <Button
-            android:id="@+id/loanDeleteBtn"
+            android:id="@+id/lendingCancelBtn"
             android:layout_width="120dp"
             android:layout_height="50dp"
             android:background="@drawable/cancel_btn"
             android:layout_marginRight="50dp"
             android:layout_alignParentRight="true"
-            android:text="Delete"
+            android:text="Cancel"
             android:textAllCaps="true"
             android:textColor="#000"
             android:textStyle="bold"
@@ -190,5 +190,20 @@
             />
     </RelativeLayout>
 
+    <Button
+        android:id="@+id/lendingListRedirectBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="@drawable/update_btn"
+        android:layout_marginRight="50dp"
+        android:text="Lending List"
+        android:textAllCaps="true"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        />
 
 </RelativeLayout>

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
-    tools:context=".UpdateLoanActivity">
+    tools:context=".UpdateLendingActivity">
 
     <RelativeLayout
         android:id="@+id/rL1"
@@ -31,7 +32,7 @@
         android:id="@+id/addLoanTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Update Loan"
+        android:text="Update Lending"
         android:textAllCaps="true"
         android:textColor="#0000FF"
         android:layout_below="@+id/rL1"
@@ -47,18 +48,17 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="40sp"
         android:layout_marginRight="40sp"
-        android:layout_below="@+id/addLoanTxt"
         android:background="@color/colorAccent"
+        android:layout_below="@+id/addLoanTxt"
         android:layout_marginTop="30dp"
         app:helperTextTextColor="#000"
         android:textColorHint="#000"
         >
         <EditText
-            android:id="@+id/loanNameUpdateTxt"
+            android:id="@+id/lendingNameUpdateTxt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="12sp"
-            android:layout_below="@+id/addLoanTxt"
             android:hint="Person's Name"
             android:textColorHint="#000"
             android:paddingLeft="10dp"
@@ -82,7 +82,7 @@
         android:textColorHint="#000"
         >
         <EditText
-            android:id="@+id/loanDateUpdateTxt"
+            android:id="@+id/lendingDateUpdateTxt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="12sp"
@@ -106,11 +106,11 @@
         android:layout_below="@+id/txtLayout2"
         android:layout_marginTop="10dp"
         app:helperTextTextColor="#000"
-        android:textColorHint="#000"
         android:background="@color/colorAccent"
+        android:textColorHint="#000"
         >
         <EditText
-            android:id="@+id/loanAmountUpdateTxt"
+            android:id="@+id/lendingAmountUpdateTxt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="12sp"
@@ -132,13 +132,13 @@
         android:layout_marginLeft="40sp"
         android:layout_marginRight="40sp"
         android:layout_below="@+id/txtLayout3"
-        android:layout_marginTop="10dp"
         android:background="@color/colorAccent"
+        android:layout_marginTop="10dp"
         app:helperTextTextColor="#000"
         android:textColorHint="#000"
         >
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/loanDescriptionUpdateTxt"
+        <EditText
+            android:id="@+id/lendingDescriptionUpdateTxt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="12sp"
@@ -162,7 +162,7 @@
         >
 
         <Button
-            android:id="@+id/loanUpdateBtn"
+            android:id="@+id/lendingUpdateBtn"
             android:layout_width="120dp"
             android:layout_height="50dp"
             android:background="@drawable/loan_update_btn"
@@ -176,7 +176,7 @@
             />
 
         <Button
-            android:id="@+id/loanDeleteBtn"
+            android:id="@+id/lendingDeleteBtn"
             android:layout_width="120dp"
             android:layout_height="50dp"
             android:background="@drawable/cancel_btn"
