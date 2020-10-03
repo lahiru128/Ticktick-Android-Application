@@ -6,176 +6,106 @@
     android:layout_height="match_parent"
     tools:context=".AddIncome">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="423dp"
-        android:layout_height="40dp"
-        android:background="#673AB7"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/title_name"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@drawable/ic_wave"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
-    <TextView
-        android:id="@+id/inputIncomes"
-        android:layout_width="322dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="596dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/input_incomes"
-        android:textAlignment="center"
-        android:textColor="#1237BA"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.415"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/expensesTotalDashboard"
-        app:layout_constraintVertical_bias="0.213" />
+        <TextView
+            android:id="@+id/inputIncomes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:gravity="center"
+            android:text="@string/input_incomes"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="35dp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/addIncomeAmount"
-        android:layout_width="111dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/add_amount"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/incomeAmountAdd"
-        app:layout_constraintHorizontal_bias="0.376"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputIncomes"
-        app:layout_constraintVertical_bias="0.079" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/smile" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/addIncomeName"
-        android:layout_width="111dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/add_name"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/incomeAmountAdd"
-        app:layout_constraintHorizontal_bias="0.44"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputIncomes"
-        app:layout_constraintVertical_bias="0.271" />
 
-    <TextView
-        android:id="@+id/addIncomeNote"
-        android:layout_width="111dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/add_note"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/incomeAmountAdd"
-        app:layout_constraintHorizontal_bias="0.541"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputIncomes"
-        app:layout_constraintVertical_bias="0.502" />
-
-    <EditText
-        android:id="@+id/incomeAmountAdd"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
+        android:layout_marginBottom="75dp"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputIncomes"
-        app:layout_constraintVertical_bias="0.079" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
 
-    <EditText
-        android:id="@+id/incomeNameAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/addIncomeName"
-        app:layout_constraintTop_toBottomOf="@+id/inputIncomes"
-        app:layout_constraintVertical_bias="0.268" />
+        <EditText
+            android:id="@+id/incomeNameAdd"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/formtextfield"
+            android:gravity="center"
+            android:hint="@string/add_name"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColorHint="#8D3F51B5" />
 
-    <EditText
-        android:id="@+id/incomeNoteAdd"
-        android:layout_width="206dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/addIncomeNote"
-        app:layout_constraintTop_toBottomOf="@+id/incomeAmountAdd"
-        app:layout_constraintVertical_bias="0.324" />
+        <EditText
+            android:id="@+id/incomeAmountAdd"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/formtextfield"
+            android:gravity="center"
+            android:hint="@string/add_amount"
+            android:inputType="numberDecimal"
+            android:paddingLeft="15dp"
+            android:textColorHint="#8D3F51B5" />
 
-    <Button
-        android:id="@+id/incomeSaveBtn"
-        android:layout_width="157dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="#55E16B"
-        android:text="@string/save"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/incomeCancelBtn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addIncomeNote" />
+        <EditText
+            android:id="@+id/incomeNoteAdd"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/formtextfield"
+            android:gravity="center"
+            android:hint="@string/add_note"
+            android:inputType="textMultiLine"
+            android:paddingLeft="15dp"
+            android:textColorHint="#8D3F51B5" />
 
-    <Button
-        android:id="@+id/incomeCancelBtn"
-        android:layout_width="157dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="104dp"
-        android:background="#ED3C3C"
-        android:text="@string/cancel"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.535" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center">
 
+            <ImageButton
+                android:id="@+id/incomeSaveBtn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/saveicon"
+                android:text="@string/save"
+                android:textSize="18sp" />
 
-
-
+            <ImageButton
+                android:id="@+id/incomeCancelBtn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="70dp"
+                android:background="@mipmap/cancelicon"
+                android:text="@string/cancel"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
