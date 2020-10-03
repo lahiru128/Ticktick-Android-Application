@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashborad_background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btntodo"
+        android:layout_width="278dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/btn"
+        android:backgroundTint="#FA9500"
+        android:text="To-Dos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnincom"
+        android:layout_width="276dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btn"
+        android:backgroundTint="#FA9500"
+        android:text="Expenses Tracker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btntodo"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnloan"
+        android:layout_width="282dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btn"
+        android:backgroundTint="#FA9500"
+        android:text="Loan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnincom"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnremin"
+        android:layout_width="276dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btn"
+        android:backgroundTint="#FA9500"
+        android:text="Reminder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnloan"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

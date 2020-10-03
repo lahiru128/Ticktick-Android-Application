@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Ticktick</string>
+    <string name="ticktick">Ticktick</string>
+    <string name="title_name">My Expenses Tracker</string>
+    <string name="dashboard_income_total">Total Incomes</string>
+    <string name="dashboard_expenses">Total Expenses</string>
+    <string name="dashboard_balance">Balance</string>
+    <string name="value">000.00</string>
+    <string name="income">YOUR INCOMES</string>
+    <string name="expense">YOUR EXPENSES</string>
+    <string name="add_income_btn">INCOMES</string>
+    <string name="add_expense_btn">EXPENSES</string>
+    <string name="input_incomes">ADD NEW INCOME</string>
+    <string name="add_amount">Update Amount</string>
+    <string name="add_name">Update Name</string>
+    <string name="add_note">Update Note</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="input_expenses">ADD NEW EXPENSES</string>
+    <string name="edit_btn">Edit</string>
+    <string name="update_incomes">UPDATE INCOME</string>
+    <string name="update_expense">UPDATE EXPENSE</string>
+    <string name="update_btn">UPDATE</string>
+    <string name="delete_btn">DELETE</string>
+    <string name="invalid_amount">Amount Cannot be Empty</string>
+    <string name="invalid_name">Name Cannot be Empty</string>
+    <string name="invalid_eamount">Amount cannot be Empty!</string>
+    <string name="invalid_ename">Name Cannot Be Empty!!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_data">0000.00</string>
+    <string name="update_expens">Update Expense</string>
+    <string name="your_incomes">Your Incomes</string>
+    <string name="your_expenses">Your Expenses</string>
+    <string name="expenses_dashboard">Expenses Dashboard</string>
+
+ <!-- TODO: Strings -->
+    <string name="invalid_title">Title Cannot be Empty</string>
+    <string name="invalid_date">Date Cannot be Empty</string>
+    <string name="todo_title_name">My To-Dos</string>
+    <string name="add_title">Title</string>
+    <string name="add_date">Date</string>
+    <string name="add_todo_note">To-Dos</string>
+</resources>
