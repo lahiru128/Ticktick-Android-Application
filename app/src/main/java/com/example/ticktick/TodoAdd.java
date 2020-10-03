@@ -43,7 +43,7 @@ public class TodoAdd extends AppCompatActivity {
         //Initialize Validation Style
         awesomeValidation = new AwesomeValidation(BASIC);
 
-        //Add Validations For Amount
+        //Add Validations For Form
         awesomeValidation.addValidation(TodoAdd.this, R.id.todoTitleAdd, RegexTemplate.NOT_EMPTY, R.string.invalid_title);
         awesomeValidation.addValidation(TodoAdd.this, R.id.todoDateAdd, RegexTemplate.NOT_EMPTY, R.string.invalid_date);
 
@@ -71,13 +71,13 @@ public class TodoAdd extends AppCompatActivity {
         });
     }
 
-    //Add income method
+    //Add To-do method
     private void addTodo() {
         String todoTitle = title.getText().toString().trim();
         String todoDate = date.getText().toString().trim();
         String todoNote = note.getText().toString().trim();
 
-        //Check whether the amount is entered
+        //Check whether the to-do is entered
         if (!TextUtils.isEmpty(todoTitle)) {
             String id = databaseTodo.push().getKey();
             Todo todo = new Todo(id, todoTitle, todoDate, todoNote);
