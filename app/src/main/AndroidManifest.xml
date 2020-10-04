@@ -18,6 +18,14 @@
         <activity android:name=".AddExpenses" />
         <activity android:name=".AddIncome" />
         <activity android:name=".ExpensesView"/>
+        <activity android:name=".AddLendingActivity"/>
+        <activity android:name=".AddLoanActivity"/>
+        <activity android:name=".FinalActivity"/>
+        <activity android:name=".LendingListActivity"/>
+        <activity android:name=".LoanListActivity"/>
+        <activity android:name=".UpdateLendingActivity"/>
+        <activity android:name=".UpdateLoanActivity"/>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

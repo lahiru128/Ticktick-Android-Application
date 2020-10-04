@@ -1,16 +1,17 @@
 package com.example.ticktick;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button btntodo;
     private Button btnincom;
+    private Button btnloan;
 
 
     @Override
@@ -32,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
                 openDashBoard();
             }
         });
+        btnloan = (Button) findViewById(R.id.btnloan);
+        btnloan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFinalActivity();
+            }
+        });
     }
 
     public void openTodoView() {
@@ -41,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void openDashBoard() {
         Intent intent = new Intent(this, DashBoard.class);
+        startActivity(intent);
+    }
+    public void openFinalActivity() {
+        Intent intent = new Intent(this, FinalActivity.class);
         startActivity(intent);
     }
 
