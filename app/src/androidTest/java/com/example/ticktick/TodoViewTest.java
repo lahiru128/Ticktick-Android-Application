@@ -31,7 +31,7 @@ public class TodoViewTest {
     @Test
     public void testLaunch() {
         //test cases for the view add values
-        View view = todoView.findViewById(R.id.todoAddBtnResultDashboard);
+        View view = todoView.findViewById(R.id.todoAddBtn);
         assertNotNull(view);
     }
 
