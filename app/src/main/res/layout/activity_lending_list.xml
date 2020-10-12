@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".LendingListActivity">
+
+    <RelativeLayout
+        android:id="@+id/rL1"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:gravity="center"
+        android:background="#9178FA"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loans and Lendings"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rL2"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:gravity="center"
+        android:background="#C0C0C0"
+        android:layout_below="@+id/rL1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lendings"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rL3"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:gravity="center"
+        android:background="#C0C0C0"
+        android:layout_below="@+id/rL2"
+        android:layout_marginTop="8dp"
+        >
+        <TextView
+            android:id="@+id/lendingTotalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total : "
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lendingList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rL3"
+        android:layout_above="@+id/addLendingRedirectBtn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/addLendingRedirectBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/save_btn"
+        android:text="Add Lending"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        />
+
+    <Button
+        android:id="@+id/checkBalanceBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/loan_update_btn"
+        android:text="Check Balance"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".UpdateLendingActivity">
+
+    <RelativeLayout
+        android:id="@+id/rL1"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:gravity="center"
+        android:background="#9178FA"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loans and Lendings"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/addLoanTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Lending"
+        android:textAllCaps="true"
+        android:textColor="#0000FF"
+        android:layout_below="@+id/rL1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/addLoanTxt"
+        android:layout_marginTop="30dp"
+        app:helperTextTextColor="#000"
+        android:textColorHint="#000"
+        >
+        <EditText
+            android:id="@+id/lendingNameUpdateTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12sp"
+            android:hint="Person's Name"
+            android:textColorHint="#000"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:background="@drawable/underline"
+            android:singleLine="true"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_below="@+id/txtLayout1"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        app:helperTextTextColor="#000"
+        android:textColorHint="#000"
+        >
+        <EditText
+            android:id="@+id/lendingDateUpdateTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12sp"
+            android:hint="Date"
+            android:textColorHint="#000"
+            android:inputType="date|text"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:background="@drawable/underline"
+            android:singleLine="true"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_below="@+id/txtLayout2"
+        android:layout_marginTop="10dp"
+        app:helperTextTextColor="#000"
+        android:background="@color/colorAccent"
+        android:textColorHint="#000"
+        >
+        <EditText
+            android:id="@+id/lendingAmountUpdateTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12sp"
+            android:hint="Amount"
+            android:textColorHint="#000"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:background="@drawable/underline"
+            android:singleLine="true"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_below="@+id/txtLayout3"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        app:helperTextTextColor="#000"
+        android:textColorHint="#000"
+        >
+        <EditText
+            android:id="@+id/lendingDescriptionUpdateTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12sp"
+            android:hint="Description"
+            android:textColorHint="#000"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:background="@drawable/underline"
+            android:singleLine="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/rL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtLayout4"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/lendingUpdateBtn"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/loan_update_btn"
+            android:layout_marginLeft="50dp"
+            android:layout_alignParentLeft="true"
+            android:text="Update"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            />
+
+        <Button
+            android:id="@+id/lendingDeleteBtn"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/cancel_btn"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentRight="true"
+            android:text="Delete"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

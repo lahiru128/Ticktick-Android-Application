@@ -52,10 +52,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void openFinalActivity() {
-        Intent intent = new Intent(this, FinalActivity.class);
+        Intent intent = new Intent(this, AddLoanActivity.class);
         startActivity(intent);
     }
-
-
 
 }
